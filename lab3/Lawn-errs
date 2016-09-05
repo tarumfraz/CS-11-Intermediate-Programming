@@ -1,0 +1,4 @@
+Lawn.java:10: error: ';' expected
+import java.util.Scanner
+                        ^
+1 error

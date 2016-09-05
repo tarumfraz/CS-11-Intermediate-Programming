@@ -1,0 +1,39 @@
+// Problem2.java
+
+class Problem2{
+  
+    public static void main( String[] args ){
+
+	int[] A = {1, 2, 3};
+
+        int[] B = {1, 2, 3};
+
+        printArray(concatenate(A,B));
+  
+    }
+
+    static int[] concatenate(int[] A, int[] B){
+        //int i;
+        int[] C  = new int[A.length+B.length];
+	
+        for( int i = 0; i < A.length; i++ ){
+	    C[i] = A[i];
+        }
+        int bCount = 0;
+        for( int i = A.length; i < (A.length+B.length); i++){
+	    bCount++;
+            C[i] = B[bCount];
+	}
+	
+	return C;
+    }
+
+
+
+    static void printArray(int[] A){
+	System.out.print("( ");
+	for(int i=0; i<A.length; i++)
+	    System.out.print(A[i]+" ");
+	System.out.println(")");
+    }
+}

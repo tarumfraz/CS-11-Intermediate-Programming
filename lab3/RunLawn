@@ -1,0 +1,12 @@
+#! /bin/bash
+#--------------------------------------
+# RunLawn
+# Tarum Fraz
+# tfraz
+# lab3
+# prints out a few statements to terminal using bash scripting language 
+#--------------------------------------
+
+echo "compiling Lawn.java"
+echo "running Lawn.class"
+echo "deleting the file Lawn.class"

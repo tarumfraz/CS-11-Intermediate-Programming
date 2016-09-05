@@ -1,0 +1,63 @@
+// Guess.java
+// Tarum Fraz
+// tfraz
+// pa2
+// This program generates a random integer between 1 and 10, and prompts the user to guess this
+// integer in three guesses. It also gives the user correct feedback on whether their guess was
+// too high or too low. If the integer is guessed correctly, the program halts. If not and the user
+// has incorrectly input their third and final guess, the program halts and responds with the correct integer.
+
+import java.util.Scanner;
+
+class Guess{
+   public static void main( String[] args ){
+      
+      int a, b , c , X = (int)(Math.random() * 10 + 1); // X generates the random mystery integer
+      Scanner sc = new Scanner(System.in);
+
+      System.out.println("\nI'm thinking of an integer in the range 1 to 10. You have three guesses.\n"); 
+        
+      
+      System.out.print("Enter you first guess: ");
+      a = sc.nextInt();
+        
+        
+      if( a > X ){ // Conditional to see if the guess is higher than mystery number
+      	 System.out.println("Your guess is too high.\n");  
+      }else if(  a < X ){
+         System.out.println("You guess is too low.\n"); // Create blank lines with \n
+      }else{
+         System.out.println("You win!");
+         System.exit( a ); // Exit the program if user guesses correct during thier first try
+      }   	
+          
+          
+      System.out.print("Enter you second guess: "); 
+      b = sc.nextInt(); // Next guess if first was wrong
+          		
+          
+      if( b > X ){
+         System.out.println("Your guess is too high.\n");        
+      }else if( b < X ){
+         System.out.println("Your guess is too low.\n");
+      }else{
+      	 System.out.println("You win!"); 
+         System.exit( b );  
+      }    
+       	
+        
+      System.out.print("Enter you third guess: ");
+      c = sc.nextInt();
+      	 	
+        
+      if( c > X ){
+     	 System.out.println("Your guess is too high.\n");
+         System.out.println("You lose. The number was " + X + "." ); // Third guess, user has lost so the number is revealed
+      }else if( c < X ){
+         System.out.println("Your guess is too low.\n");
+         System.out.println("You lose. The number was " + X + "." );
+      }else{
+         System.out.println("You win!\n"); // If nothing in the conditional above is true, user wins
+      }	 
+   }
+}

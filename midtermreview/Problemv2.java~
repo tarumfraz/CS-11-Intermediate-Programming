@@ -1,0 +1,24 @@
+// Problemv2.java
+
+import java.util.Scanner;
+
+class Problemv2{
+    public static main void( String[] args ){
+       
+        Scanner sc = new Scanner(System.in);
+        double x, y, value1, value2, value3;
+
+        System.out.print("Please enter two double values seperated by a space: ");
+        x = sc.nextDouble();
+        y = sc.nextDouble();
+
+        value1 = Math.sqrt(x);
+        value2 = Math.sqrt(y);
+        value3 = value1 + value2;
+
+        System.out.println("The value of the expression is: " + value3 );
+
+
+    }
+}
+        

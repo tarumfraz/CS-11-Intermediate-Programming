@@ -1,0 +1,14 @@
+# A simple Makefile for the Queens program
+
+Queens: Queens.class
+	echo Main-class: Queens > pa5
+	jar cvfm Queens pa5 Queens.class
+	rm pa5
+	chmod u+x Queens
+
+Queens.class: Queens.java
+	javac -Xlint Queens.java
+
+clean: 
+	rm -f Queens.class Queens
+

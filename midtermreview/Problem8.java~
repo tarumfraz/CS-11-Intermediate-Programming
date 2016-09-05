@@ -1,0 +1,36 @@
+// Problem8.java
+import java.util.Scanner;
+
+class  Problem8{
+    public static void main( String[] args ){
+     
+	Scanner sc = new Scanner(System.in);
+
+	int a,b,c,d,e, temp;
+            
+	System.out.println("Please enter 5 integers seperated by a space: ");
+        a = sc.nextInt();
+        b = sc.nextInt();
+	c = sc.nextInt();
+        d = sc.nextInt();
+        e = sc.nextInt();
+ 
+        if( a > b ){ temp=a; a=b; b=temp; }
+        if( b > c ){ temp=b; b=c; c=temp; }
+        if( c > d ){ temp=c; c=d; d=temp; }
+        if( d > e ){ temp=d; d=e; e=temp; }
+
+        if( a > b ){ temp=a; a=b; b=temp; }
+	if( b > c ){ temp=b; b=c; c=temp; }
+	if( c > d ){ temp=c; c=d; d=temp; }
+
+	if( a > b ){ temp=a; a=b; b=temp; }
+	if( b > c ){ temp=b; b=c; c=temp; }
+
+        if( a > b ){ temp=a; a=b; b=temp; }
+
+        System.out.print(a + " " b + " " +  c + " " + d + " "  + e );
+    
+ 
+    }
+}

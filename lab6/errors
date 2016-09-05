@@ -1,0 +1,29 @@
+// errors
+// Tarum Fraz
+// tfraz
+// lab6
+// This text file contains and describes errors that came up when
+//  running the LetterHome program
+
+1.) Missing period
+There should be a period after the sentence "Thanks for the stuff you sent", 
+Input file: letter1.dat
+
+2.) Grammatical error
+Books should be singular on the line "I have to buy another books for 
+one of my classes." 
+Inputfile: letter1.dat, letter2.dat
+
+3.) Wrong error message
+The line, "7 is a valid sentence code" should be "is not", for this is giving incorrect
+feedback to the user.
+Input file: letter4.dat
+
+4.) Grammatical error
+The line, "I plan to come home for a visit last weekend." Should not be in the past tense.
+Inputfile: letter4.dat
+
+5.) Duplicate output
+The inputs 2 3 & 2 4 produce the same output when the program is ran. The program states
+"The weather here has been hot." twice, when different inputs were entered,
+Input file: letter1.dat
